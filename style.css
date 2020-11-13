@@ -1,0 +1,125 @@
+/* /type input doesnt auto wrap onto next line  */
+/* long note text doesnt auto wrap onto next line */
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+} 
+
+.chalkBG{
+    width:100%;
+    height:100%;
+    background-image: url(tile.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position:relative;
+    
+}
+.title{
+    text-align: center;
+    width:100%;
+    height:50px;
+    font-family: 'IM Fell French Canon SC', serif;
+    top:10px;
+    margin:auto;
+}
+.linedPaper{
+    width:60%;
+    height:200px;
+    background-image: url(formbg.jpg);
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+.linedPaper>span{
+    font-weight: bold;
+}
+#date{
+    border:2px solid black;
+width:250px;
+}
+#time{
+    border:2px solid black;
+width:250px;
+}
+#addBTN{
+border:2px solid black;
+background-color: rgb(94, 255, 0);
+width:100px;
+height:25px;
+position:absolute;
+top:80%;
+left:40%;
+border-radius: 5px;
+font-weight: bold;
+font-family: fantasy;
+font-size: large;   
+border-style: groove;
+}
+#addBTN:hover{
+background-color: darkgreen;
+}
+#clearBTN{
+    border:2 px solid black;
+    background-color: red;
+    width:100px;
+    height:25px;
+    position:absolute;
+    top:80%;
+    left:58%;
+    border-radius: 5px;
+    font-weight: bold;
+font-family: fantasy;
+font-size: large;
+border-style: groove;
+}
+#clearBTN:hover{
+    background-color: lightgray;
+}
+.noteArea{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#enterText{
+    width:100%;
+    height:100px;
+    background-color: rgba(120,120,120,.2);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+.newNote{
+    animation: fadeIn ease 1s;
+    background-image: url(notebg.png);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 200px;
+    align-self:flex-start;
+}
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+.noteText{
+    width:150px;
+    height:100px;
+    overflow: auto;
+    text-align: center;
+}
+
+
